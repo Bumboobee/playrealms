@@ -1,9 +1,9 @@
 import { useRef } from "react";
 
-import AnimatedTitle from "./animatedTitle";
 import gsap from "gsap";
+import Button from "./button";
+import AnimatedTitle from "./animatedTitle";
 import RoundedCorners from "./roundedConers";
-import  Button from "./button";
 
 const Story = () => {
   const frameRef = useRef(null);
@@ -78,7 +78,7 @@ const Story = () => {
           </div>
         </div>
 
-        <div className="-mt-8 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
+        <div className="-mt-32 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
           <div className="flex h-full w-fit flex-col items-center md:items-start">
             <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
               Where realms converge, lies ${import.meta.env.VITE_APP_NAME} and the boundless pillar. Discover its
