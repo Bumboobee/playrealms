@@ -3,7 +3,7 @@ import { TiLocationArrow } from "react-icons/ti";
 
 import PropTypes from "prop-types";
 
-const BentoTilt = ({ children, className = "" }) => {
+const BentoTilt = ({ children, className = "", id = "" }) => {
   const [transformStyle, setTransformStyle] = useState("");
   const itemRef = useRef(null);
 
@@ -28,6 +28,7 @@ const BentoTilt = ({ children, className = "" }) => {
 
   return (
     <div
+      id={id}
       className={className}
       ref={itemRef}
       onMouseMove={handleMouseMove}
@@ -71,10 +72,10 @@ const Features = () => {
     <section className="bg-black pb-52">
       <div className="container mx-auto px-3 md:px-10">
         <div className="px-5 py-32">
-          <p className="font-circular-web text-lg text-blue-50">Into the Metagame Layer</p>
+          <p className="font-circular-web text-lg text-blue-50">Dentro da Camada Metajogo</p>
           <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-            Immerse yourself in a rich and ever-expanding universe where a vibrant array of products converge into an
-            interconnected overlay experience on your world.
+            Mergulhe em um universo rico e em constante expansão onde uma vibrante gama de produtos converge em uma
+            experiência sobreposta interconectada no seu mundo.
           </p>
         </div>
 
@@ -83,10 +84,10 @@ const Features = () => {
             src="videos/feature-1.mp4"
             title={
               <>
-                radia<b>n</b>t
+                radia<b>n</b>te
               </>
             }
-            description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
+            description="Um aplicativo metajogo multiplataforma que transforma suas atividades em jogos Web2 e Web3 em uma aventura recompensadora."
           />
         </BentoTilt>
 
@@ -99,11 +100,11 @@ const Features = () => {
                   zig<b>m</b>a
                 </>
               }
-              description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
+              description="Uma coleção NFT inspirada em anime e jogos - a propriedade intelectual pronta para expansão."
             />
           </BentoTilt>
 
-          <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
+          <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0" id="nexus">
             <BentoCard
               src="videos/feature-3.mp4"
               title={
@@ -111,7 +112,7 @@ const Features = () => {
                   n<b>e</b>xus
                 </>
               }
-              description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
+              description="Um hub social gamificado, adicionando uma nova dimensão de jogo à interação social para comunidades Web3."
               isComingSoon
             />
           </BentoTilt>
@@ -121,10 +122,10 @@ const Features = () => {
               src="videos/feature-4.mp4"
               title={
                 <>
-                  az<b>u</b>l
+                  bl<b>u</b>e
                 </>
               }
-              description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
+              description="Um Agente de IA entre mundos - elevando sua jogabilidade para ser mais divertida e produtiva."
             />
           </BentoTilt>
 
@@ -156,7 +157,8 @@ BentoCard.propTypes = {
 
 BentoTilt.propTypes = {
   children: PropTypes.node.isRequired,
-  className: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  id: PropTypes.string,
 };
 
 export default Features;

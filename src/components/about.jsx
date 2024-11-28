@@ -27,17 +27,17 @@ const About = () => {
   });
 
   return (
-    <div id="about" className="min-h-screen w-screen">
+    <div id="sobre" className="min-h-screen w-screen">
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
-        <h2 className="font-general text-sm uppercase md:text-[10px]">Welcome to {import.meta.env.VITE_APP_NAME}</h2>
+        <h2 className="font-general text-sm uppercase md:text-[10px]">Bem-vindo a {import.meta.env.VITE_APP_NAME}</h2>
         <AnimatedTitle
-          title={"Disc<b>o</b>rver the world's l<b>a</b>rgest shared adventure"}
+          title={"D<b>e</b>scubra o maior m<b>u</b>ndo compartilhad<b>o</b>"}
           containerClass="mt-5 !text-black text-center"
         />
         <div className="about-subtext">
-          <p>The Game of Games begins-your life, now an epic MMORPG</p>
+          <p>O Jogo dos Jogos começa — sua vida, agora um MMORPG épico</p>
 
-          <p>{import.meta.env.VITE_APP_NAME} unites every player from countless games and platforms</p>
+          <p>{import.meta.env.VITE_APP_NAME} une todos os jogadores de incontáveis jogos e plataformas</p>
         </div>
       </div>
 

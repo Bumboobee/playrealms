@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import Button from "./button";
 
-const navItems = ["Nexus", "Vault", "Prologue", "About", "Contact"];
+const navItems = ["Nexus", "Vault", "Prólogo", "Sobre", "Contato"];
 
 const Navbar = () => {
   const [isAudioPlaying, setisAudioPlaying] = useState(false);
@@ -67,7 +67,7 @@ const Navbar = () => {
 
             <Button
               id="product-button"
-              title="Products"
+              title="Produtos"
               rightIcon={<TiLocationArrow />}
               containerClass={"bg-blue-50 md:flex hidden items-center justify-center gap-1"}
             />

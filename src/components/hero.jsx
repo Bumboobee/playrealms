@@ -6,7 +6,7 @@ import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import Button from "./button";
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
@@ -145,12 +145,12 @@ const Hero = () => {
             </h1>
 
             <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
-              Enter the Metagame Layer <br /> Unleash the Play Economy
+              Entre na Camada Metajogo <br /> Liberte a Economia do Jogo
             </p>
 
             <Button
               id="watch-trailer"
-              title="Watch Trailer"
+              title="Assistir ao Trailer"
               leftIcon={<TiLocationArrow />}
               containerClass="!bg-yellow-300 flex-center gap-1"
             />

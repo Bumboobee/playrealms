@@ -9,10 +9,10 @@ const links = [
 
 const Footer = () => {
   return (
-    <footer className="w-screen bg-violet-300 py-4 text-zinc-200">
+    <footer className="w-screen bg-violet-800 py-4 text-zinc-200">
       <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 md:flex-row">
         <p className="text-center text-sm md:text-left">
-          &copy; 2024 <span className="font-bold">Bumboobee</span> Inc. All rights reserved.
+          &copy; 2024 <span className="font-bold">Bumboobee</span> Inc. Todos os direitos reservados.
         </p>
 
         <div className="flex justify-center gap-4 md:justify-start">
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
 
         <a href="#privacy-policy" className="text-center text-sm hover:underline  md:text-right">
-          Privacy Police
+          Política de Privacidade
         </a>
       </div>
     </footer>

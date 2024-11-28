@@ -47,13 +47,13 @@ const Story = () => {
   };
 
   return (
-    <section id="story" className="min-h-dvh w-screen bg-black text-blue-50">
+    <section id="prólogo" className="min-h-dvh w-screen bg-black text-blue-50">
       <div className="flex size-full flex-col items-center py-10 pb-24">
-        <p className="font-general text-sm uppercase md:text-[10px]">The multiversal IP world</p>
+        <p className="font-general text-sm uppercase md:text-[10px]">Um mundo de IP multiversal</p>
 
         <div className="relative size-full">
           <AnimatedTitle
-            title="The st<b>o</b>ry of <br /> a hidden real<b>m</b>"
+            title="A his<b>t</b>oria de <br /> um r<b>e</b>ino ocult<b>o</b>"
             sectionId="#story"
             containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
           />
@@ -81,11 +81,11 @@ const Story = () => {
         <div className="-mt-32 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
           <div className="flex h-full w-fit flex-col items-center md:items-start">
             <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
-              Where realms converge, lies ${import.meta.env.VITE_APP_NAME} and the boundless pillar. Discover its
-              secrets and shape your fate amidst infinite opportunities.
+              Onde os reinos convergem, encontra-se a {import.meta.env.VITE_APP_NAME} e o pilar infinito. Descubra seus
+              segredos e molde seu destino em meio a oportunidades infinitas.
             </p>
 
-            <Button id="realm-button" title="Discover Prologue" containerClass="mt-5" />
+            <Button id="realm-button" title="Descubra o Prólogo" containerClass="mt-5" />
           </div>
         </div>
       </div>
